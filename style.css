@@ -1,0 +1,1082 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
+:root{
+	--container-color:#000 ;
+	--second-color:#14213d ;
+	--text-color:#fca311 ;
+	--bg-color:#ffe4e4 ; 
+	--sky-color:#fff;       
+        }
+
+/* Navigations */
+
+        .navs{
+	background-color: var(--second-color);
+        }
+        .nav-container {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 2rem;
+
+                  }
+                  
+                  .nav-container a {
+	color: var(--sky-color) ;
+	text-decoration: none;
+
+                  }
+                  
+                  .logo{
+                   font-size: 1.5rem;
+                   font-weight: 600;
+                  }
+
+                  .nav-container .logo span {
+	color:var(--text-color) ;
+                  }
+                  
+                  nav {
+                    font-size: 1.4rem;
+
+                  }
+
+                  nav a:hover{
+	background-color: var(--text-color);
+	border-radius: 28%;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+                  }
+
+                  nav a {
+	display: inline-block;
+	padding:  1rem;
+                  }
+                  
+
+/* Navigations */
+
+
+
+/* hero section */
+         header{
+          background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/stu.jpg) ;
+          min-height: 90vh;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+         position: relative;	
+          }
+
+        .hero{
+	text-align: center;
+	padding: 50px 0;	
+	align-items: center;
+                    padding-top: 4rem;
+           } 
+
+        .hero h1 {
+	font-size: 50px;
+	color: var(--sky-color);
+	margin-top: 4rem;
+                  }
+                  
+                  .hero p {
+	font-family: 'Poppins', sans-serif;
+	color:  var(--sky-color);
+	font-size: 1.01rem; 
+	align-items: center;
+	text-align: center;
+	line-height: 1.5rem;
+	padding-bottom: 2rem;
+                  }
+
+
+                  .custom-btn {
+	background-color: var(--text-color);
+	color: var(--container-color);
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: .5rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+                  }
+
+                  .custom-btn:hover{
+                    background-color: var(--sky-color);
+	color:var(--text-color) ;
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+                  }
+/* hero section */
+
+
+/* course-icon */
+
+.course-countainer{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+ }
+
+ .cr-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.sub-title{
+  font-size: 1.2rem;
+}
+
+.row{
+  display: flex;
+  margin-top: 4%;
+  justify-content: space-between;
+}
+
+.icon{
+  font-size: 4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#html{
+  color: #e34c26;
+ }
+ 
+ #css{
+   color: #264de4;
+ }
+ 
+ #js{
+     color: #f0db4f; 
+ }
+
+ #node{
+  color: #3c873a;
+ }
+
+ #react{
+  color: #61dafb;
+ }
+
+ #Python{
+  color: #306998;
+ }
+ 
+ .course-icon{
+  flex-basis: 31%;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin-bottom: 4%;
+  padding: 1.25rem 0.75rem;
+  transition: 0.5s;
+ }
+
+ h2{
+  color: var(--second-color);
+  font-size: 1.6rem;
+  padding: .5rem 0;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-descr{
+  color: var(--container-color);
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 0.4rem;
+  font-weight: 300;
+  
+}
+
+.course-icon:hover{
+  box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+transition: all 0.25s; 
+transition-timing-function: cubic-bezier(0.31, -0.105); 
+}
+
+
+
+/* .course-countainer{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+ }
+ 
+ .cr-title{
+   font-size: 2.5rem;
+   font-weight: 600;
+ }
+ 
+ .row{
+   display: flex;
+   margin-top: 4%;
+   justify-content: space-between;
+ }
+ 
+ 
+ .icon{
+    font-size: 4rem;
+    font-weight: 500;
+    cursor: pointer;
+ }
+ 
+ #html{
+  color: #e34c26;
+ }
+ 
+ #css{
+   color: #264de4;
+ }
+ 
+ #js{
+     color: #f0db4f; 
+ }
+
+ #node{
+  color: #3c873a;
+ }
+
+ #react{
+  color: #61dafb;
+ }
+
+ #Python{
+  color: #306998;
+ }
+ 
+ 
+ .course-icon{
+   flex-basis: 31%;
+   box-sizing: border-box;
+   border-radius: 1rem;
+   margin-bottom: 4%;
+   padding: 1.25rem 0.75rem;
+   transition: 0.5s;
+  }
+
+  h2{
+    color: var(--second-color);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+  .course-descr{
+    color: var(--container-color);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 0.6rem;
+    font-weight: 300;
+  }
+
+  .course-icon:hover{
+    box-shadow: 0 0 20px 0px rgba(4,9,30,0.7);
+	transition: all 0.25s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+  } */
+
+.center{
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/studen.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 6.9rem;
+  border-radius: 0.6rem;
+  align-items: center;
+}
+
+.center h1{
+  color:var(--sky-color) ;
+  font-size: 2.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  
+}
+
+.center .center-btn{
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: var(--sky-color);
+  background-color: var(--second-color);
+  border-radius: 0.5rem;
+  border-color:var(--text-color) ;
+  font-weight: 300; 
+  cursor: pointer; 
+
+}
+
+.center-btn:hover{
+  background-color: var(--sky-color) ;
+  color: var(--second-color) ;
+  border-color:var(--text-color) ;
+  cursor: pointer;
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+
+}
+
+.description{
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.desc-text{
+  background-color: var(--bg-color) ;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 0.6rem;
+
+}
+
+.description h4{
+ text-align: center;
+ color: var(--second-color);
+ font-size: 2rem;
+ font-weight: 600;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.description p{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: var(--container-color) ;
+  
+}
+
+footer{
+  width: 100%;
+  background-color: var(--container-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 7rem;
+}
+
+.foter-cop{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.foter-cop p{
+  color: var(--sky-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.foter-cop p span{
+ color: var(--text-color);
+ font-weight: 600;
+}
+
+.social-icons{
+  font-size: 1.6rem;
+}
+
+.social-icons a{
+  border-color: #fca311;
+  padding: 1rem;
+  line-height: 90px; 
+  text-align: center;  
+  position: relative;
+  overflow: hidden;
+  border-radius: 18%; 
+  box-shadow: 0 5px 15px -5px rgba(219, 214, 214, 0.1);
+  opacity: 0.99;
+  color: var(--bg-color);
+}
+
+.social-icons .facebook{
+  color: #3b5998;
+}
+
+.social-icons .facebook:hover{
+  color: #fff;
+  background-color: #3b5998;
+  
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+}
+
+.social-icons .twitter{
+  color: #3cf;
+}
+
+.social-icons .twitter:hover{
+  color: #fff;
+  background-color: #3cf;
+  
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+}
+
+.social-icons .instagram{
+  color: #E4405F;
+}
+
+
+.social-icons .instagram:hover{
+  color: #fff;
+  background-color: #E4405F;
+  
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+}
+
+
+.social-icons .youtube{
+  color: #FF0000;
+}
+
+
+
+.social-icons .youtube:hover{
+  color: #fff;
+  background-color: #FF0000;
+	border-radius: 1rem;
+	transition: all 0.55s; 
+	transition-timing-function: cubic-bezier(0.31, -0.105); 
+}
+
+
+/* courses page */
+
+.frontend-container{
+  margin: auto;
+  text-align: center;
+  padding-top: 1.8rem;
+
+}
+
+.frontend-container h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+}
+
+.frontend-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));  
+  justify-content: center;   
+  gap: 1.5rem;    
+}
+
+
+.course-pic{
+  background:var(--sky-color) ;  
+  box-shadow: 0 4px 14px rgba(122, 120, 120, 0.1);  
+  padding: 17px;   
+  border-radius: 0.5rem;
+}
+
+.course-pic .images{
+  width: 100%;
+  height: 230px;   
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+
+.course-pic h2 a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+
+.course-pic h2 a:hover{
+  color: #e34c26;
+  font-size: 1.8rem;
+  
+}
+
+
+.course-descript{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--container-color);
+  display: -webkit-box; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.about-countainer{
+  margin: auto;
+  text-align: center;
+  padding-top: 1.8rem;
+}
+
+.about-countainer h4{
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+   padding-top: 2rem;
+}
+
+
+div .box{
+  width: 100%;
+  height: 650px;
+  text-align: center;
+}
+
+.about-countainer p{
+  width: 100%;
+  text-align: center;
+  line-height: 1.9rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.contact-container{
+  margin: auto;
+  text-align: center;
+  padding-top: 1.9rem;
+}
+
+.contact-container h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+
+.contact-container .contact-img{
+  width: 100%;
+  height: 650px;
+  text-align: center;
+}
+
+.text-contact{
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.text-contact .text{
+  margin-top: 2rem;
+}
+
+.text-contact p{
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-weight: 400;
+}
+
+.text-contact p span{
+  color: var(--sky-color) ;
+  background-color: #4300fd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querys */
+
+/* For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px */
+
+/* DESKTOPS */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .center {
+    width: 70%;
+    padding: 5rem;
+  }
+  .center h1 {
+    font-size: 1.8rem;
+  }
+  .center .center-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .description p {
+    font-size: 1.1rem;
+  }
+
+  .course-descr {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .frontend-row {
+    gap: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about-countainer h4 {
+    font-size: 1.8rem;
+  }
+
+  .about-countainer p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+ 
+  .contact-container h4 {
+    font-size: 1.6rem;
+  }
+
+  .text-contact {
+    margin-left: 3.4rem;
+  }
+}
+
+/* LAPTPS AND SMALL SIZES SCREEN */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+         .hero h1 {
+             font-size: 40px;
+          }
+
+          .hero p {
+            font-size: 0.8rem;
+            align-items: center;
+            text-align: center;
+            line-height: 1.0781rem;
+          }
+   	
+          .course-descr {
+            font-size: 0.8rem;
+            line-height: 1.3rem;
+            font-weight: 500;
+          }
+
+          .center {
+            width: 84%;
+            padding: 5.3rem;
+          }
+
+          .center h1 {
+            font-size: 1.6rem;
+            line-height: 2rem;
+          }
+
+          .center .center-btn {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+          }
+
+          .description {
+            margin-right: 3.5rem;
+            margin-left: 3.5rem;
+          }
+
+          .description p {
+            font-size: 1rem;
+          }
+
+          .foter-cop {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-direction: column;
+          }
+
+          .social-icons {
+            margin-top: 1.4rem;
+          }
+
+     .conta{
+      margin: 0 auto;
+      width: 94%;
+    
+     }     
+     .about-countainer h4 {
+      font-size: 1.8rem;
+    }
+    div .box {
+      height: 430px;
+    }
+
+    .about-countainer p {
+      line-height: 1.4rem;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .contact-container h4 {
+      font-size: 1.5rem;
+    }
+    .contact-container .contact-img {
+      height: 470px;
+    }
+}
+
+/* TAPLET OR IPADS */
+@media (min-width: 480px) and (max-width: 768px) {
+ 
+   .nav-container {
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    padding-top: 2rem;
+     }	
+
+     
+     nav {
+     font-size: 1.2rem;
+     padding-top: 1rem;
+     }
+
+ 
+ .hero h1 {
+      font-size: 30px;
+  }
+                      
+
+                  
+  .hero p {
+    font-weight: 500;
+    font-size: 0.566rem;
+    text-align: center;
+    line-height: 1.3rem;
+    padding: 1rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .center {
+    width: 90%;
+    padding: 2.5rem;
+  }
+
+  .center h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .center .center-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .description {
+    margin-left: 3.6rem;
+    margin-right: 3.6rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .foter-cop {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    flex-direction: column;
+  }
+
+  .foter-cop p {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+  }
+
+  .sub-title {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .about-countainer h4 {
+    font-size: 1.6rem;
+  }
+
+  div .box {
+    height: 350px;
+  }
+
+  .about-countainer p {
+    line-height: 1.4rem;
+    font-weight: 500;
+    font-size: 0.645rem;
+  }
+
+  .contact-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .contact-container .contact-img {
+    height: 360px;
+  }
+
+  .text-contact p {
+    font-size: 1.1rem;
+  }
+}
+
+/* MOBILE DEVISES */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.nav-container{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  padding: 1rem;	
+}		
+   nav {
+     font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+	               
+	                
+  .hero h1 {
+    font-size: 20px;
+    
+    }
+		                 
+	               
+             
+    .hero p {
+      font-weight: 500;
+      font-size: 0.566rem;
+      text-align: center;
+      line-height: 1.3rem;
+      padding: 1rem;
+    }
+  
+
+    
+.custom-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+}  
+	      
+.cr-title {
+  font-size: 1.8rem;
+}
+
+.sub-title {
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  margin-top: 7%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.course-descr {
+  font-size: 0.853rem;
+  line-height: 1.4rem;
+}
+
+.center h1 {
+  font-size: 0.9rem;
+}
+
+.center {
+  width: 80%;
+  padding: 1.9rem;
+}
+
+.center .center-btn {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.description {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.description h4 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.description p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+
+}
+
+
+.foter-cop {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  margin-top: 1.4rem;
+}
+
+.foter-cop p {
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.footer-container .nav-container{
+  display: none;
+}
+
+.frontend-container h1 {
+  font-size: 1.1rem;
+}
+
+.sub-title {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.about-countainer h4 {
+  font-size: 1.4rem;
+}
+
+div .box {
+  height: 330px;
+}
+
+.about-countainer p {
+  line-height: 1.5rem;
+  font-size: 0.824rem;
+}
+
+.contact-container h4 {
+  font-size: 1.2rem;
+}
+
+.contact-container .contact-img {
+  height: 330px;
+}
+
+.text-contact {
+  margin-left: 1rem;
+}
+
+.text-contact .text {
+  font-size: 1.1rem;
+}
+
+.text-contact p {
+  font-size: 0.781rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+}
+
+
